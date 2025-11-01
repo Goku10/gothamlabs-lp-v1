@@ -5,6 +5,7 @@ import ChatWidget from './components/ChatWidget';
 import { Hero } from './sections/Hero';
 import { ProblemValue } from './sections/ProblemValue';
 import { WorkGallery } from './sections/WorkGallery';
+import { DashboardShowcase } from './sections/DashboardShowcase';
 import { FeatureWalkthrough } from './sections/FeatureWalkthrough';
 import { SocialProof } from './sections/SocialProof';
 import { Pricing } from './sections/Pricing';
@@ -37,6 +38,7 @@ function App() {
         <Hero onContactClick={handleContactClick} />
         <ProblemValue />
         <WorkGallery />
+        <DashboardShowcase />
         <FeatureWalkthrough />
         <SocialProof />
         <div data-track-view="pricing_view">
