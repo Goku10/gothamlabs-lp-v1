@@ -55,7 +55,7 @@ export function DashboardShowcase() {
             <Button
               variant="primary"
               size="lg"
-              onClick={() => window.open('https://equinor-global-asset-hwjm.bolt.host', '_blank')}
+              onClick={() => window.open('https://equinor-global-asset-xga8.bolt.host/', '_blank')}
               className="group"
             >
               <span>Try Dashboard</span>
@@ -67,34 +67,23 @@ export function DashboardShowcase() {
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-3xl"></div>
               <div className="relative bg-gotham-800/50 backdrop-blur-sm rounded-2xl border border-gotham-700/50 p-4 shadow-2xl hover:border-primary/50 transition-all duration-500 group">
-                <div className="aspect-video bg-gradient-to-br from-gotham-800 to-gotham-900 rounded-xl overflow-hidden border border-gotham-700">
-                  <div className="w-full h-full flex items-center justify-center relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
-
-                    <div className="relative z-10 text-center p-8">
-                      <Map className="w-20 h-20 text-primary/40 mx-auto mb-4 animate-pulse" />
-                      <p className="text-gotham-400 text-sm">Dashboard Preview</p>
-                      <p className="text-gotham-500 text-xs mt-2">Click "Try Dashboard" to view live demo</p>
-                    </div>
-
-                    <div className="absolute top-4 left-4 bg-gotham-950/80 backdrop-blur-sm rounded-lg px-3 py-2 border border-gotham-700/50">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                        <span className="text-xs text-gotham-300">Live</span>
+                <div className="aspect-video rounded-xl overflow-hidden border border-gotham-700 relative group-hover:border-primary/30 transition-colors">
+                  <img
+                    src="/image copy.png"
+                    alt="Equinor Global Assets Dashboard Preview"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gotham-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
+                      <div className="bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-4 py-2">
+                        <span className="text-sm font-medium text-primary">Click to explore live dashboard</span>
                       </div>
                     </div>
-
-                    <div className="absolute bottom-4 right-4 bg-gotham-950/80 backdrop-blur-sm rounded-lg px-3 py-2 border border-gotham-700/50">
-                      <div className="flex items-center gap-3 text-xs text-gotham-300">
-                        <div className="flex items-center gap-1">
-                          <Globe className="w-3 h-3" />
-                          <span>245</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Satellite className="w-3 h-3" />
-                          <span>12</span>
-                        </div>
-                      </div>
+                  </div>
+                  <div className="absolute top-4 left-4 bg-gotham-950/80 backdrop-blur-sm rounded-lg px-3 py-2 border border-gotham-700/50">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                      <span className="text-xs text-gotham-300">Live</span>
                     </div>
                   </div>
                 </div>
